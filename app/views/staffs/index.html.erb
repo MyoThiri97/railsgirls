@@ -1,0 +1,8 @@
+<p>スタッフの一覧</p>
+<% @staffs.each do |staff| %>
+	<p>
+	<%= staff.name %>
+	<%= staff.title %>
+	</p>
+<% end %>
+<p><%= link_to '従業員の一覧', company_staffs_path(@company) %></p>
